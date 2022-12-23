@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>youtube</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <style>
+  .logo img{
+    width: 100px;
+  }
+  .navbar-brand{
+    color:black;
+  }
+  .right-logo img{
+    height: 10px;
+    height: 10px;
+  }
+  .right-logo img,.nav-link img{
+    width: 25px;
+
+  }
+  .right-logo a:last-child{
+    margin-right: 0 !important;
+  }
+  .nav{
+    justify-content: space-between;
+  }
+  .nav .nav-item.active{
+    background-color: #80808024;
+    border-radius: 0 !important;
+   
+  }
+  .nav .nav-item.active a{
+    display: flex;
+    column-gap: 5px;
+    vertical-align: middle;
+
+  }
+
+  .nav .nav-item{
+    border-radius: 20px;
+    background-color: #80808024;
+  }
+  .nav .nav-link{
+    color: black;
+  }
+  .nav{
+    overflow: auto;
+    width: 400px;
+  }
+  .nav .nav-item .bar{
+    padding: 0;
+    border-radius: 0;
+    vertical-align: middle;
+    font-size: 25px;
+    background-color: white;
+  }
+  .nav .nav-item.current{
+    background-color: black !important;
+    color: white;
+  }
+  .nav .nav-item.current .nav-link{
+    color: white;
+  }
+  .videos img{
+    width: 100%;
+    height: auto;
+
+
+  }
+  .videos .container{
+    position: relative;
+  }
+  .videos .container .bottom-right{
+    position: absolute;
+    bottom: 90px;
+    right: 12px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .videos .container .top-right{
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .nav.imgtop{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .bottom-right{
+    /* margin-top: 20px;
+    margin-bottom: 10px; */
+    bottom: -449px;
+  }
+
+  
+  .bottom-right p{
+    margin-top: 50px;
+  }
+  .titlecontainer img{
+    width:50px ;
+    border-radius: 50%;
+    height: 60px;
+
+  }
+  .title-inner{
+    margin-top: 17px;
+  }
+  .title-inner .container{
+    font-size: 12px;
+  }
+  .titlecontainer{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .title-inner img{
+    height:30px;
+    float: right;
+    margin-top: -60px;
+  }
+  </style>
+  <link rel="short icon" type="x-icon" href="https://www.iconpacks.net/icons/2/free-youtube-logo-icon-2431-thumb.png">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark mb-3">
+  <div class="container-fluid">
+    <div>
+        <a class="navbar-brand logo" href="#">
+            <img src="image/yutubelogo.png">
+        </a>
+    </div>
+    <div class="right-logo"></div>
+    
+    <a class="navbar-brand" href="#"><img style="height:30px;width:30px;" src="image/cast.png" alt=""></a>
+        <a class="navbar-brand" href="#"><img style="height:30px;width:30px;"src="image/notification.png" alt=""></a>
+        <a class="navbar-brand" href="#"><img style="height:30px;width:30px;"src="image/search.png" alt=""></a>
+        <a class="navbar-brand" href="#"><img style="height: 30px; width:30px;" src="image/mic.png" alt=""></a>
+        <a class="navbar-brand" href="#"><img style="height: 30px; width:30px;" src="image/addvideo.png" alt=""></a>
+            
+        
+            <a class="navbar-brand mr-0" href="#"></a>
+        
+        <img src="image/youtubeuserlogo.jpg" alt="Avatar Logo" style="width: 30px;" class="rounded-pill"> 
+      </a>
+      </div>
+    </div>
+  </div>
+</nav>
+<ul style="overflow:hidden; width: 100%;" class="nav"> 
+   <!-- <div class="d-flex justify-content-end bg-light"> -->
+    <li class="nav-item ">
+      <a class="nav-link " href="#"><img src="image/explore.png" alt=""> Explore</a>
+    </li>
+    <li class="nav-item ">
+        <a class="nav-link bar" href="#">|</a>
+      </li>
+    <li class="nav-item current">
+      <a class="nav-link" href="#">All</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Live</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link " href="#">Hollywood</a>
+    </li>
+
+  <li class="nav-item">
+        <a class="nav-link " href="#">Malayalam</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="#">Bollywood</a>
+      </li>  
+      <li class="nav-item">
+        <a class="nav-link " href="#">Progressive</a>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link " href="#">Techno</a>
+      </li>     
+   <!-- </div> -->
+  </ul> 
+
+<div class="container-fluid mt-3 videos p-0">
+<div class="container p-0">
+    <!-- <img src="https://static.wixstatic.com/media/c03113_91453abc670342d3a7a7df3a5e48fc7c~mv2.jpg/v1/fill/w_928,h_522,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c03113_91453abc670342d3a7a7df3a5e48fc7c~mv2.jpg" alt="snow" style="width: 100%;"> -->
+    <iframe style="width: 100%;" width="560" height="315" src="https://www.youtube.com/embed/cYhM4LMBfik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="top-right">
+    
+        <ul class="nav imgtop">
+            <li class="nav-item">
+                <a class="nav-link" href=""><img style="height:30px;width:30px;" src="/image/volume2.png" alt=""></a>
+
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href=""><img style="height:30px;width:30px;" src="/image/closedcaption2.png" alt=""></a>
+
+            </li>
+        </ul>
+       
+    </div>
+     <div class="bottom-right"><p>12:34</p></div>
+    <div class="container titlecontainer">
+        <img src="https://www.dlf.pt/dfpng/middlepng/607-6079482_shanti-people-mahishasura-mardini-hd-png-download.png"alt="Avatar Logo" style="width: 45px;" class="rounded-pill">
+ 
+    
+    <div class="container title-inner">
+        <div class="container">
+        <span style="font-weight:bold ;">Shanthi People official</span>
+        <p style="font-weight: bold;"><span>Hanuman chalisa </span>
+        <span>2M views</span>
+        <span>2 days ago</span>
+        </p>
+        
+        </div>
+        <img src="image/more.png" alt="">
+    
+    </div>
+</div>
+</div>
+
+</div>
+<div class="container-fluid mt-3 videos p-0">
+    <div class="container p-0">
+        <img src="image/pinkfloyd.jpg" alt="snow" style="width: 100%;">
+        <div class="top-right">
+        
+            <ul class="nav imgtop">
+                <li class="nav-item">
+                    <a class="nav-link" href=""><img style="height:30px;width:30px;"  src="image/volume2.png" alt=""></a>
+    
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href=""><img style="height:30px;width:30px;"  src="image/closedcaption2.png" alt=""></a>
+    
+                </li>
+            </ul>
+           
+        </div>
+         <div class="bottom-right"><p>12:34</p></div>
+        <div class="container titlecontainer">
+            <img src="https://cdns-images.dzcdn.net/images/cover/8dfcd85aecd1b51fa8ac773288667590/264x264.jpg"alt="Avatar Logo" style="width: 30px;height: 30px;margin-top: 15px;" class="rounded-pill">
+     
+        
+        <div class="container title-inner">
+            <div class="container">
+            <span style="font-weight:bold ;">Pink Floyd Official</span>
+            <p style="font-weight:bold ;"><span>Another Brick in tht Wall </span>
+            <span style="font-weight:bold ;">|2M views|</span>
+            <span style="font-weight:bold ;">|2 days ago|</span>
+            </p>
+            
+            </div>
+            <img src="image/more.png" alt="">
+        
+        </div>
+    </div>
+    </div>
+    
+    </div>
+    <div class="container-fluid mt-3 videos p-0">
+        <div class="container p-0">
+            <!-- <img src="https://i.ytimg.com/vi/66T5jAjEo2Q/maxresdefault.jpg" alt="snow" style="width: 100%;"> -->
+            <iframe style="width: 100%;" width="560" height="315" src="https://www.youtube.com/embed/66T5jAjEo2Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="top-right">
+            
+                <ul class="nav imgtop">
+                    <li class="nav-item">
+                        <a class="nav-link" href=""><img style="height:30px;width:30px;"  src="image/volume2.png" alt=""></a>
+        
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=""><img style="height:30px;width:30px;"  src="image/closedcaption2.png" alt=""></a>
+        
+                    </li>
+                </ul>
+               
+            </div>
+             <div class="bottom-right"><p>12:34</p></div>
+            <div class="container titlecontainer">
+                <img src="https://yt3.ggpht.com/ytc/AMLnZu-rGCMdbV05u8VQGjmtd9lcXHmZ4LMEo4-OUj_f=s900-c-k-c0x00ffffff-no-rj"alt="Avatar Logo" style="width: 30px;height: 30px;margin-top: 15px;" class="rounded-pill">
+         
+            
+            <div class="container title-inner">
+                <div class="container">
+                <span style="font-weight:bold ;">Blue Flames Official</span>
+                <p style="font-weight:bold ;"><span>Brahmaji Dream Catcher </span>
+                <span style="font-weight:bold ;"> 2M views </span>
+                <span style="font-weight:bold ;"> 2 days ago </span>
+                </p>
+                
+                </div>
+                <img src="image/more.png" alt="">
+            
+            </div>
+        </div>
+        </div>
+        </div>
+        <div class="container-fluid mt-3 videos p-0">
+            <div class="container p-0">
+                <img src="https://www.nme.com/wp-content/uploads/2018/11/GettyImages-77700197.jpg" alt="snow" style="width: 100%;">
+                <div class="top-right">
+                
+                    <ul class="nav imgtop">
+                        <li class="nav-item">
+                            <a class="nav-link" href=""><img style="height:30px;width:30px;"  src="image/volume2.png" alt=""></a>
+            
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href=""><img style="height:30px;width:30px;"  src="image/closedcaption2.png" alt=""></a>
+            
+                        </li>
+                    </ul>
+                   
+                </div>
+                 <div class="bottom-right"><p>10:20</p></div>
+                <div class="container titlecontainer">
+                    <img src="https://extrachill.com/wp-content/uploads/2021/03/led-zeppelin-logos.jpeg"alt="Avatar Logo" style="width: 30px;height: 30px;margin-top: 15px;" class="rounded-pill">
+             
+                
+                <div class="container title-inner">
+                    <div class="container">
+                    <span style="font-weight:bold ;">Led Zappelein Official</span>
+                    <p style="font-weight:bold ;"><span>Stairway TO Heaven </span>
+                    <span style="font-weight:bold ;"> 8M views </span>
+                    <span style="font-weight:bold ;"> 4 Year ago </span>
+                    </p>
+                    
+                    </div>
+                    <img src="image/more.png" alt="">
+                
+                </div>
+            </div>
+            </div>
+            <div class="container-fluid mt-3 videos p-0">
+                <div class="container p-0">
+                    <!-- <iframe src="" alt="snow" style="width: 100%;"> -->
+                        <iframe style="width: 100%;" width="560" height="315" src="https://www.youtube.com/embed/MKk1u5RMTn4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+                    <div class="top-right">
+                    
+                        <ul class="nav imgtop">
+                            <li class="nav-item">
+                                <a class="nav-link" href=""><img style="height:30px;width:30px;"  src="image/volume2.png" alt=""></a>
+                
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href=""><img style="height:30px;width:30px;"  src="image/closedcaption2.png" alt=""></a>
+                
+                            </li>
+                        </ul>
+                       
+                    </div>
+                     <div class="bottom-right"><p>10:20</p></div>
+                    <div class="container titlecontainer">
+                        <img src="https://photos.bandsintown.com/large/12156321.jpeg"alt="Avatar Logo" style="width: 30px;height: 30px;margin-top: 15px;" class="rounded-pill">
+                 
+                    
+                    <div class="container title-inner">
+                        <div class="container">
+                        <span style="font-weight:bold ;">Poets of the Fall</span>
+                        <p style="font-weight:bold ;"><span>Carnival of Rust (Official Video w/ Lyrics)</span>
+                        <span style="font-weight:bold ;"> 5M views </span>
+                        <span style="font-weight:bold ;"> 3 Year ago </span>
+                        </p>
+                        
+                        </div>
+                        <img src="image/more.png" alt="">
+                    
+                    </div>
+                </div>
+                </div>
+                <div class="container-fluid mt-3 videos p-0">
+                    <div class="container p-0">
+                        <!-- <img src="https://www.nme.com/wp-content/uploads/2018/11/GettyImages-77700197.jpg" alt="snow" style="width: 100%;"> -->
+                        <iframe style="width: 100%;" width="560" height="315" src="https://www.youtube.com/embed/J56VVtlZCGE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="top-right">
+                        
+                            <ul class="nav imgtop">
+                                <li class="nav-item">
+                                    <a class="nav-link" href=""><img style="height:30px;width:30px;"  src="image/volume2.png" alt=""></a>
+                    
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href=""><img style="height:30px;width:30px;"  src="image/closedcaption2.png" alt=""></a>
+                    
+                                </li>
+                            </ul>
+                           
+                        </div>
+                         <div class="bottom-right"><p>10:20</p></div>
+                        <div class="container titlecontainer">
+                            <img src="https://m.media-amazon.com/images/I/61qI1LuVftL._SL1220_.jpg"alt="Avatar Logo" style="width: 30px;height: 30px;margin-top: 15px;" class="rounded-pill">
+                     
+                        
+                        <div class="container title-inner">
+                            <div class="container">
+                            <span style="font-weight:bold ;">OMNIA (Official)</span>
+                            <p style="font-weight:bold ;"><span>- Fee Ra Huri </span>
+                            <span style="font-weight:bold ;"> 10M views </span>
+                            <span style="font-weight:bold ;"> 5 Year ago </span>
+                            </p>
+                            
+                            </div>
+                            <img src="image/more.png" alt="">
+                        
+                        </div>
+                    </div>
+                    </div>
+                    <div class="container-fluid mt-3 videos p-0">
+                      <div class="container p-0">
+                        <iframe style="width:100%;"width="560" height="315" src="https://www.youtube.com/embed/71Gt46aX9Z4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          <div class="top-right">
+                          
+                              <ul class="nav imgtop">
+                                  <li class="nav-item">
+                                      <a class="nav-link" href=""><img style="height:30px;width:30px;"  src="image/volume2.png" alt=""></a>
+                      
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link" href=""><img style="height:30px;width:30px;"  src="image/closedcaption2.png" alt=""></a>
+                      
+                                  </li>
+                              </ul>
+                             
+                          </div>
+                           <div class="bottom-right"><p>10:20</p></div>
+                          <div class="container titlecontainer">
+                              <img src="https://images.8tracks.com/cover/i/012/754/004/robert_johnson-9030.jpg?rect=0,86,462,462&q=98&fm=jpg&fit=max&w=960&h=960"alt="Avatar Logo" style="width: 30px;height: 30px;margin-top: 15px;" class="rounded-pill">
+                       
+                          
+                          <div class="container title-inner">
+                              <div class="container">
+                              <span style="font-weight:bold ;">Gary B.B. Coleman</span>
+                              <p style="font-weight:bold ;"><span>The Sky is Crying</span>
+                              
+                              <span style="font-weight:bold ;"> 196M views </span>
+                              <span style="font-weight:bold ;"> 4 Year ago </span>
+                              </p>
+                              
+                              </div>
+                              <img src="image/more.png" alt="">
+                          
+                          </div>
+                      </div>
+                      </div>
+
+                      <div class="container-fluid mt-3 videos p-0">
+                        <div class="container p-0">
+                          <iframe style="width:100% ;" width="560" height="315" src="https://www.youtube.com/embed/HXn4j25jzYY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="top-right">
+                            
+                                <ul class="nav imgtop">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href=""><img style="height:30px;width:30px;"  src="image/volume2.png" alt=""></a>
+                        
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href=""><img style="height:30px;width:30px;"  src="image/closedcaption2.png" alt=""></a>
+                        
+                                    </li>
+                                </ul>
+                               
+                            </div>
+                             <div class="bottom-right"><p>10:20</p></div>
+                            <div class="container titlecontainer">
+                                <img src="https://i1.sndcdn.com/avatars-RoDgpiqdE4ggxS3i-GrjR0g-t240x240.jpg"alt="Avatar Logo" style="width: 30px;height: 30px;margin-top: 15px;" class="rounded-pill">
+                         
+                            
+                            <div class="container title-inner">
+                                <div class="container">
+                                <span style="font-weight:bold ;">Mandragora</span>
+                                <p style="font-weight:bold ;"><span>You Feel Like Shanti (Full Ep)</span>
+                                
+                                <span style="font-weight:bold ;"> 9M views </span>
+                                <span style="font-weight:bold ;"> 4 Year ago </span>
+                                </p>
+                                
+                                </div>
+                                <img src="image/more.png" alt="">
+                            
+                            </div>
+                        </div>
+                        </div>
+
+</body>
+</html>
